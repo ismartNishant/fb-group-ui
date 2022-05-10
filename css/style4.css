@@ -1,0 +1,38 @@
+.overflow-hidden img {
+    object-fit: cover;
+}
+
+.fs-1 {
+    font-size: 8rem !important;
+}
+
+.banner {
+    height: 25rem;
+}
+
+@media (max-width:600px) {
+
+    .group-btn button,
+    .group-btn a {
+        padding: .2rem .5rem;
+    }
+    .banner {
+        height: 15rem;
+    }
+    .grp-member{
+        justify-content: center;
+    }
+   .banner-content{
+       flex-direction: column;
+   }
+   .banner-content .group-btn{
+       padding: .5rem 0rem;
+       
+   }
+  
+    .h1 {
+        font-size: 2rem;
+    }
+   
+    
+}
