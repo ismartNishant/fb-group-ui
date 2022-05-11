@@ -9,7 +9,39 @@
 .banner {
     height: 25rem;
 }
-
+.about_see_all{
+    background: lightgrey;
+    width: 100%;
+}
+.about_see_all:hover{
+    background:darkgray;
+}
+.accordion-button{
+    padding: 1rem;
+    font-weight: 500;
+}
+.accordion-button:focus{
+    box-shadow: none;
+    color: black;
+    border: none;
+}
+.accordion-button:active{
+    color: black;
+}
+.about_sec{
+    width: 50%;
+    border-radius: 7px;
+}
+@media (max-width:1024px){
+    .about_sec{
+        width: 70%;
+    }
+}
+@media (max-width:710px){
+    .about_sec{
+        width: 80%;
+    }
+}
 @media (max-width:600px) {
 
     .group-btn button,
@@ -33,6 +65,22 @@
     .h1 {
         font-size: 2rem;
     }
-   
+   .hi{
+       margin-right: 0.5rem;
+   }
     
+}
+@media (max-width:535px){
+    .hi{
+        margin-right: 1rem;
+    }
+}
+@media (max-width:420px){
+    .about_sec{
+        width: 95%;
+        padding: 0.5rem!important;
+    }
+    .topics{
+        width: 90%;
+    }
 }
