@@ -15,7 +15,7 @@
 .banner {
     height: 25rem;
 }
-<<<<<<< HEAD
+
 
 .about_see_all {
     background: lightgrey;
@@ -31,8 +31,7 @@
     font-weight: 500;
 }
 
-.accordion-button:focus {
-=======
+.accordion-button:focus 
 .about_see_all{
     background: lightgrey;
     width: 100%;
@@ -45,6 +44,7 @@
     font-weight: 500;
 }
 .accordion-button:focus{
+
     box-shadow: none;
     color: black;
     border: none;
