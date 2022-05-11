@@ -23,25 +23,60 @@
 </head>
 
 <body>
-    <div class="">
+    <div class="container">
         <div class=" ">
-            <div class="overflow-hidden banner " >
+            <div class="overflow-hidden banner ">
                 <img src="./img/f.jpg" class="w-100 h-100" alt="...">
+            </div>
+            <div class="">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-primary write-msg rounded-circle py-2" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    <i class='bx bxs-edit-alt'></i>
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">New Message</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div>
+                                    <div class="d-flex justify-content-center">
+                                        <label for="inputPassword" class="col-1 col-form-label">To:</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="inputPassword">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Create Album</button>
+                                <button type="button" class="btn btn-primary">Add Photos/Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="d-flex justify-content-between p-3 align-items-center border-bottom border-dark banner-content">
                 <div class="grp-info">
                     <p class="h1">Our byicycle group</p>
-                    <p class="d-flex grp-member align-items-center p-0 m-0 "><i class='bx bx-globe'></i> Piblic Group . <a href="#"
-                            class="card-link">399k Members</a></p>
+                    <p class="d-flex grp-member align-items-center p-0 m-0 "><i class='bx bx-globe'></i> Piblic Group .
+                        <a href="#" class="card-link">399k Members</a></p>
                 </div>
                 <div class="d-flex align-items-center ">
                     <div class="d-flex align-items-center group-btn">
-                        <button type="button" class="btn btn-outline-warning mx-1">+ Join</button>
-                        <button type="button" class="btn btn-warning mx-1">Invite</button>
-                        <button class="btn btn-warning mx-1" type="button " data-bs-toggle="offcanvas"
+                        <button type="button" class="btn btn-outline-primary mx-1">+ Join</button>
+                        <button type="button" class="btn btn-primary mx-1">Invite</button>
+                        <button class="btn btn-primary mx-1" type="button " data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Groups</button>
-                        <p class="p-0 m-0 " >
-                            <a class="btn btn-warning mx-1" data-bs-toggle="collapse" href="#collapseExample"
+                        <p class="p-0 m-0 ">
+                            <a class="btn btn-primary mx-1" data-bs-toggle="collapse" href="#collapseExample"
                                 role="button" aria-expanded="false" aria-controls="collapseExample">
                                 <i class='bx bxs-chevron-down'></i>
                             </a>
@@ -67,7 +102,7 @@
                                         aria-describedby="basic-addon1">
                                 </div>
                                 <div class=" text-center">
-                                    <button type="button" class="btn btn-outline-warning mx-1 px-5  ">Create new
+                                    <button type="button" class="btn btn-outline-primary mx-1 px-5  ">Create new
                                         Group</button>
                                 </div>
                             </div>
@@ -166,13 +201,13 @@
                 </div>
 
             </div>
-            <div class="collapse" id="collapseExample">
-                <div class="card card-body ">
+            <div class="collapse m-5 border border-dark" id="collapseExample">
+                <div class="card card-body  ">
                     <h5>Realted Groups</h5>
                     <div class="text-center py-3">
                         <i class='bx bxs-user fs-1'></i>
                         <h4>No recommendations to show</h4>
-                        <button type="button" class="btn btn-outline-warning mx-1">Explore Group</button>
+                        <button type="button" class="btn btn-outline-primary mx-1">Explore Group</button>
                     </div>
                 </div>
             </div>
@@ -209,18 +244,267 @@
                             <button class="nav-link" id="nav-media-tab" data-bs-toggle="tab" data-bs-target="#nav-media"
                                 type="button" role="tab" aria-controls="nav-mdia" aria-selected="false">Media</button>
                         </div>
-                        <div class="">
-                            <button type="button" class="btn btn-outline-warning mx-1 "><i
+                        <div class="d-flex ">
+                            <button type="button" class="btn btn-outline-primary mx-1 "><i
                                     class='bx bx-search'></i></button>
-                            <button type="button" class="btn btn-outline-warning mx-1 "><i
-                                    class='bx bx-dots-vertical-rounded'></i></button>
+
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle mx-1" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class='bx bx-dots-vertical-rounded'></i>
+                                </button>
+                                <ul class="dropdown-menu  px-3">
+                                    <li><a class="dropdown-item d-flex align-items-center " href="#"><i
+                                                class='bx bx-comment-detail me-1'></i> Your content</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center" href="#"><i
+                                                class='bx bxs-share bx-flip-horizontal me-1'></i> Share</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center" href="#"><i
+                                                class='bx bx-badge-check me-1'></i> Manage badge</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center" href="#"><i
+                                                class='bx bx-pin me-1'></i> Pin Group</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center" href="#"><i
+                                                class='bx bx-comment me-1'></i> Sort comments</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center" href="#"><i
+                                                class='bx bxs-message-error me-1'></i> Report Group</a></li>
+                                </ul>
+                            </div>
+
                         </div>
                     </div>
 
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        a.</div>
+                        <div class="container about_sec p-3 my-3" style="
+                        box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;">
+                            <h2 class="pb-3" style="border-bottom: 1px solid darkgray;
+                            font-size: 1.1rem;">About this group</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, placeat vel. Facere
+                                reprehenderit ea tempora, provident distinctio porro iste, ipsa nobis, vitae illo nemo
+                                nisi.</p>
+                            <div class="row justify-content-start ">
+                                <div class="col-1" style="font-size: 1.4rem;
+                                color: grey;">
+                                    <i class='bx bxs-lock-alt'></i>
+                                </div>
+                                <div class="col-7 topics">
+                                    <h4 style="font-size: 1.1rem;">Private</h4>
+                                    <p style="font-size: 0.9rem;">Only members can see who's in the group and what they
+                                        post.</p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-start align-items-center">
+                                <div class="col-1" style="font-size: 1.4rem;
+                                color: grey;">
+                                    <i class='bx bxs-lock-alt'></i>
+                                </div>
+                                <div class="col-5 topics">
+                                    <h4 style="font-size: 1.1rem;">Visible</h4>
+                                    <p style="font-size: 0.9rem;">Anyone can find this group.</p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-start align-items-center">
+                                <div class="col-1" style="font-size: 1.4rem;
+                                color: grey;">
+                                    <i class='bx bxs-lock-alt'></i>
+                                </div>
+                                <div class="col-5 ">
+                                    <h4 style="font-size: 1.1rem;">Kolkata</h4>
+
+                                </div>
+                            </div>
+                            <div class="row justify-content-start align-items-center">
+                                <div class="col-1" style="font-size: 1.4rem;
+                                color: grey;">
+                                    <i class='bx bxs-group'></i>
+                                </div>
+                                <div class="col-5">
+                                    <h4 style="font-size: 1.1rem;">General</h4>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container about_sec p-3 my-3" style="
+                        box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;">
+                            <h2 class="pb-3" style="border-bottom: 1px solid darkgray;
+                            font-size: 1.1rem;">Transperency</h2>
+                            <div class="row justify-content-start ">
+                                <div class="col-1" style="font-size: 1.4rem;
+                                color: grey;">
+                                    <i class='bx bxs-time-five'></i>
+                                </div>
+                                <div class="col-9 topics">
+                                    <h4 style="font-size: 1.1rem;">History</h4>
+                                    <p style="font-size: 0.9rem;">Group created on December 4, 2019. Name last changed
+                                        on December 8, 2019.</p>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-default about_see_all">See all</button>
+                        </div>
+                        <div class="container about_sec p-3 my-3" style="
+                        box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;">
+                            <h2 class="pb-3" style="border-bottom: 1px solid darkgray;
+                            font-size: 1.1rem;">Members<span style="color: grey;"> . 3.8K</span></h2>
+                            <div class="row justify-content-start align-items-center my-3">
+                                <div class="col-1 hi">
+                                    <img src="./img/u.png" style="height: 40px;">
+                                </div>
+                                <div class="col-1 hi">
+                                    <img src="./img/u.png" style="height: 40px;">
+                                </div>
+                                <div class="col-1 hi">
+                                    <img src="./img/u.png" style="height: 40px;">
+                                </div>
+                                <div class="col-1 hi">
+                                    <img src="./img/u.png" style="height: 40px;">
+                                </div>
+                                <div class="col-1 hi">
+                                    <img src="./img/u.png" style="height: 40px;">
+                                </div>
+                                <!--<div class="col-1 hi"><button type="button" class="btn btn-default about_see_all" style="border-radius: 50%;">...</button></div>-->
+                            </div>
+                            <p class="mb-4">Rajat, Aditi and 4 other friends have joined</p>
+                            <div class="row justify-content-start align-items-center my-3">
+                                <div class="col-1 hi">
+                                    <img src="./img/u.png" style="height: 40px;">
+                                </div>
+                                <div class="col-1 hi">
+                                    <img src="./img/u.png" style="height: 40px;">
+                                </div>
+
+                                <div class="col-1 hi">
+                                    <img src="./img/u.png" style="height: 40px;">
+                                </div>
+                                <div class="col-1 hi">
+                                    <img src="./img/u.png" style="height: 40px;">
+                                </div>
+                                <div class="col-1 hi">
+                                    <img src="./img/u.png" style="height: 40px;">
+                                </div>
+                                <!--<div class="col-1 hi"><button type="button" class="btn btn-default about_see_all" style="border-radius: 50%;">...</button></div>-->
+                            </div>
+                            <p class="mb-4">Rajat and 4 other members are admins. Kundan and 5 other members are
+                                moderators.</p>
+                            <button type="button" class="btn btn-default about_see_all">See all</button>
+                        </div>
+                        <div class="container about_sec p-3 my-3" style="
+                        box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;">
+                            <h2 class="pb-3 mb-3" style="border-bottom: 1px solid darkgray;
+                            font-size: 1.1rem;">Activity</h2>
+                            <div class="row justify-content-start ">
+                                <div class="col-1" style="font-size: 1.4rem;
+                                color: grey;">
+                                    <i class='bx bxs-message-alt-detail'></i>
+                                </div>
+                                <div class="col-7 topics">
+                                    <h4 style="font-size: 1rem;">24 new posts today</h4>
+                                    <p style="font-size: 0.9rem;
+                                    color: gray;">279 in the last month</p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-start ">
+                                <div class="col-1" style="font-size: 1.4rem;
+                                color: grey;">
+                                    <i class='bx bxs-group'></i>
+                                </div>
+                                <div class="col-7 topics">
+                                    <h4 style="font-size: 1rem;">3,783 total members</h4>
+                                    <p style="font-size: 0.9rem;
+                                    color: gray;">+ 84 in the last week</p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-start ">
+                                <div class="col-1" style="font-size: 1.4rem;
+                                color: grey;">
+                                    <i class='bx bxs-grid-alt'></i>
+                                </div>
+                                <div class="col-7 topics">
+                                    <h4 style="font-size: 1rem;">Created 2 years ago</h4>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container about_sec p-3 my-3" style="
+                        box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;">
+                            <h2 class="pb-3 mb-3" style="border-bottom: 1px solid darkgray;
+                            font-size: 1.1rem;">Group rules from the admins</h2>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            <span class="mr-4 fw-bold" style="color: grey;
+                                      font-size: 0.9rem; margin-right: 1.5rem;">1</span> Be kind and corteous
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            We're all in this together to create a welcoming environment. Let's treat
+                                            everyone with respect. Healthy debates are natural, but kindness is
+                                            required.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            <span class="mr-4 fw-bold" style="color: grey;
+                                      font-size: 0.9rem; margin-right: 1.5rem;">2</span> No hate speech or bullying
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            We're all in this together to create a welcoming environment. Let's treat
+                                            everyone with respect. Healthy debates are natural, but kindness is
+                                            required.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            <span class="mr-4 fw-bold" style="color: grey;
+                                      font-size: 0.9rem; margin-right: 1.5rem;">3</span> No promotions or spam
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            We're all in this together to create a welcoming environment. Let's treat
+                                            everyone with respect. Healthy debates are natural, but kindness is
+                                            required.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            <span class="mr-4 fw-bold" style="color: grey;
+                                        font-size: 0.9rem; margin-right: 1.5rem;">4</span> Respect everyone's privacy
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            We're all in this together to create a welcoming environment. Let's treat
+                                            everyone with respect. Healthy debates are natural, but kindness is
+                                            required.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                         .d..
                     </div>
@@ -234,7 +518,150 @@
                     </div>
                     <div class="tab-pane fade" id="nav-events" role="tabpanel" aria-labelledby="nav-events-tab">.e..
                     </div>
-                    <div class="tab-pane fade" id="nav-media" role="tabpanel" aria-labelledby="nav-media-tab"> .m..
+                    <!--media section -->
+                    <div class="tab-pane fade mt-4 p-3 border-top border-secondary shadow-lg " id="nav-media"
+                        role="tabpanel" aria-labelledby="nav-media-tab">
+                        <div class="">
+                            <div class="d-flex justify-content-between">
+                                <h3>Media</h3>
+                                <div class="media-btn">
+                                    <button type="button" class="btn btn-outline-primary">Create Album</button>
+                                    <button type="button" class="btn btn-outline-primary">Add Photos/Video</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <button class="nav-link active" id="nav-photos-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-photos" type="button" role="tab" aria-controls="nav-photos"
+                                        aria-selected="true">Photos</button>
+                                    <button class="nav-link" id="nav-videos-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-videos" type="button" role="tab" aria-controls="nav-videos"
+                                        aria-selected="false">Video</button>
+                                    <button class="nav-link" id="nav-albums-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-albums" type="button" role="tab" aria-controls="nav-albums"
+                                        aria-selected="false">Albums</button>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <!--photos section in media-->
+                                <div class="tab-pane fade show active pt-2" id="nav-photos" role="tabpanel"
+                                    aria-labelledby="nav-photos-tab">
+                                    <div class="d-flex m-auto flex-wrap gap-2 pt-3 justify-content-center">
+                                        <div class="photos-card"><img src="./img/a.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/b.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/c.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/d.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/e.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/f.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/a.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/b.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/c.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/d.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/e.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/f.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/a.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/b.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/c.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/d.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/e.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/f.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/d.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/e.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/f.jpg" alt="..."></div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-videos" role="tabpanel"
+                                    aria-labelledby="nav-video-tab">
+                                    <div class="d-flex m-auto flex-wrap gap-2 pt-3 justify-content-center">
+                                        <div class="photos-card"><img src="./img/a.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/b.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/c.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/d.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/e.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/f.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/a.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/b.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/c.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/d.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/e.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/f.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/a.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/b.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/c.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/d.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/e.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/f.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/d.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/e.jpg" alt="..."></div>
+                                        <div class="photos-card"><img src="./img/f.jpg" alt="..."></div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-albums" role="tabpanel"
+                                    aria-labelledby="nav-albums-tab">
+                                    <div class="d-flex m-auto flex-wrap gap-3 pt-3 justify-content-center">
+                                        <div class="photos-card">
+                                            <img class="rounded" src="./img/a.jpg" alt="...">
+                                            <div class="py-1">
+                                                <h5 class="m-0">NBA finals 2019</h5>
+                                                <p>1 Photos</p> 
+                                            </div>
+                                        </div>
+                                        <div class="photos-card">
+                                            <img class="rounded" src="./img/b.jpg" alt="...">
+                                            <div class="py-1">
+                                                <h5 class="m-0">NBA finals 2019</h5>
+                                                <p>4 Photos</p> 
+                                            </div>
+                                        </div>
+                                        <div class="photos-card">
+                                            <img class="rounded" src="./img/c.jpg" alt="...">
+                                            <div class="py-1">
+                                                <h5 class="m-0">NBA finals 2019</h5>
+                                                <p>6 Photos</p> 
+                                            </div>
+                                        </div>
+                                        <div class="photos-card">
+                                            <img class="rounded" src="./img/d.jpg" alt="...">
+                                            <div class="py-1">
+                                                <h5 class="m-0">NBA finals 2019</h5>
+                                                <p>10 Photos</p> 
+                                            </div>
+                                        </div>
+                                        <div class="photos-card">
+                                            <img class="rounded" src="./img/e.jpg" alt="...">
+                                            <div class="py-1">
+                                                <h5 class="m-0">NBA finals 2019</h5>
+                                                <p>11 Photos</p> 
+                                            </div>
+                                        </div>
+                                        <div class="photos-card">
+                                            <img class="rounded" src="./img/f.jpg" alt="...">
+                                            <div class="py-1">
+                                                <h5 class="m-0">NBA finals 2019</h5>
+                                                <p>15 Photos</p> 
+                                            </div>
+                                        </div>
+                                        <div class="photos-card">
+                                            <img class="rounded" src="./img/a.jpg" alt="...">
+                                            <div class="py-1">
+                                                <h5 class="m-0">NBA finals 2019</h5>
+                                                <p>3 Photos</p> 
+                                            </div>
+                                        </div>
+                                        <div class="photos-card">
+                                            <img class="rounded" src="./img/b.jpg" alt="...">
+                                            <div class="py-1">
+                                                <h5 class="m-0">NBA finals 2019</h5>
+                                                <p>5 Photos</p> 
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
