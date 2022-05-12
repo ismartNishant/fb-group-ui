@@ -40,11 +40,14 @@
     color: black;
 }
 
-.about_sec {
+.about_sec, .event_sec {
     width: 50%;
     border-radius: 7px;
 }
-
+.event_img{
+    height: 160px;
+    border-radius: 8px;  
+}
 #nav-photos img,
 #nav-videos img {
     width: 10rem;
@@ -61,9 +64,61 @@
     object-fit: cover;
     height: 13rem;
 }
+.time{
+    color: red;
+                                    font-size: 0.9rem;
+}
+.event_id{
+    color: black;
+                                    text-decoration: none;
+                                    font-size: 1.2rem;
+}
+.has-search .form-control {
+    padding-left: 2.375rem;
+    border-radius: 12px;
+    background: whitesmoke;
+    border: none;
+    margin-bottom: 1.5rem;
+}
 
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    font-size: 1.2rem;
+    color: grey;
+}
+@media (max-width:1400px){
+    .gr_topic{
+        width: 35%;
+    }
+    .search{
+        width: 30%;
+    }
+    .create{
+        width: 35%;
+    }
+    .event_sec{
+        width: 55%;
+    }
+}
+@media (max-width:1200px){
+    .event_sec{
+        width: 60%;
+    }
+}
+@media (max-width:1073px){
+    .add_friend{
+        width: 30%;
+    }
+}
 @media (max-width:1024px) {
-    .about_sec {
+    .about_sec, .event_sec {
         width: 70%;
     }
 
@@ -76,14 +131,58 @@
         width: 7rem;
         height: 7rem;
     }
+    .event_sec{
+        width: 80%;
+    }
 }
-
+/*@media (max-width:840px){
+    .event_sec{
+        width: 80%;
+    }
+}*/
 @media (max-width:810px) {
     .about_sec {
         width: 80%;
     }
+    .event_sec{
+        width: 85%;
+    }
 }
+@media (max-width:770px){
+    /*.gr_topic{
+        width: 38%;
+    }
+    .search{
+        width: 30%;
+    }
+    .create{
+        width: 32%;
+    }*/
+    .gr_topic {
+        width: 100%;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .search {
+        width: 40%;
+    }
+    .create {
+        width: 45%;
+    }
+    .event_sec{
+        width: 90% ;
+    }
+    .event_img {
+        height: 130px;
+    }
 
+}
+/*@media(max-width:710px){
+     .event_sec{
+        width: 80%;
+    }
+
+}*/
 @media (max-width:600px) {
 
     .group-btn button,
@@ -114,7 +213,7 @@
     .hi {
         margin-right: 0.5rem;
     }
-
+    
     #nav-photos img,
     #nav-videos img {
         width: 5rem;
@@ -134,6 +233,15 @@
     #nav-albums .photos-card h5{
         font-size:1rem !important;
     }
+    .event_img {
+        height: 100px;
+    }
+    .event_sec{
+        width: 95%;
+    }
+    .add_friend {
+        width: 35%;
+    }
 }
 
 @media (max-width:535px) {
@@ -148,21 +256,75 @@
     .container {
         padding: 0rem !important;
     }
+    .about_sec, .event_sec{
+        padding: 0.5rem!important;
+    }
 
     #nav-photos img,
     #nav-videos img {
         width: 4rem;
         height: 4rem;
     }
+    /*.gr_topic {
+        width: 100%;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .search {
+        width: 40%;
+    }
+    .create {
+        width: 40%;
+    }*/
+    .topics{
+        width: 90%;
+    }
+    .add_friend {
+        width: 41%;
+    }
+
 }
 
 @media (max-width:420px) {
-    .about_sec {
+    .about_sec, .event_sec {
         width: 95%;
         padding: 0.5rem !important;
     }
 
     .topics {
         width: 90%;
+    }
+    .search {
+        width: 50%;
+    }
+    .create {
+        width: 50%;
+    }
+    .tag{
+        width: 85%;
+    }
+    .time{
+        font-size: 0.8rem;
+    }
+    .event_id{
+        font-size: 1rem;
+    }
+    .img_holder{
+        width: 35%;
+    }
+    .info_holder{
+        width: 55%;
+    }
+    .add_friend {
+        width: 25%;
+    }
+    .add_info{
+        display: none;
+    }
+    .add_row{
+        display: block;
+    }
+    .add_detail{
+        width: 39%;
     }
 }
