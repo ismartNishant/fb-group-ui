@@ -40,14 +40,17 @@
     color: black;
 }
 
-.about_sec, .event_sec {
+.about_sec,
+.event_sec {
     width: 50%;
     border-radius: 7px;
 }
-.event_img{
+
+.event_img {
     height: 160px;
-    border-radius: 8px;  
+    border-radius: 8px;
 }
+
 #nav-photos img,
 #nav-videos img {
     width: 10rem;
@@ -64,15 +67,18 @@
     object-fit: cover;
     height: 13rem;
 }
-.time{
+
+.time {
     color: red;
-                                    font-size: 0.9rem;
+    font-size: 0.9rem;
 }
-.event_id{
+
+.event_id {
     color: black;
-                                    text-decoration: none;
-                                    font-size: 1.2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
 }
+
 .has-search .form-control {
     padding-left: 2.375rem;
     border-radius: 12px;
@@ -93,32 +99,45 @@
     font-size: 1.2rem;
     color: grey;
 }
-@media (max-width:1400px){
-    .gr_topic{
+
+.no-border {
+    border: none !important;
+}
+
+@media (max-width:1400px) {
+    .gr_topic {
         width: 35%;
     }
-    .search{
+
+    .search {
         width: 30%;
     }
-    .create{
+
+    .create {
         width: 35%;
     }
-    .event_sec{
+
+    .event_sec {
         width: 55%;
     }
 }
-@media (max-width:1200px){
-    .event_sec{
+
+@media (max-width:1200px) {
+    .event_sec {
         width: 60%;
     }
 }
-@media (max-width:1073px){
-    .add_friend{
+
+@media (max-width:1073px) {
+    .add_friend {
         width: 30%;
     }
 }
+
 @media (max-width:1024px) {
-    .about_sec, .event_sec {
+
+    .about_sec,
+    .event_sec {
         width: 70%;
     }
 
@@ -131,10 +150,12 @@
         width: 7rem;
         height: 7rem;
     }
-    .event_sec{
+
+    .event_sec {
         width: 80%;
     }
 }
+
 /*@media (max-width:840px){
     .event_sec{
         width: 80%;
@@ -144,11 +165,14 @@
     .about_sec {
         width: 80%;
     }
-    .event_sec{
+
+    .event_sec {
         width: 85%;
     }
 }
-@media (max-width:770px){
+
+@media (max-width:770px) {
+
     /*.gr_topic{
         width: 38%;
     }
@@ -163,20 +187,25 @@
         margin-bottom: 1rem;
         text-align: center;
     }
+
     .search {
         width: 40%;
     }
+
     .create {
         width: 45%;
     }
-    .event_sec{
-        width: 90% ;
+
+    .event_sec {
+        width: 90%;
     }
+
     .event_img {
         height: 130px;
     }
 
 }
+
 /*@media(max-width:710px){
      .event_sec{
         width: 80%;
@@ -213,7 +242,7 @@
     .hi {
         margin-right: 0.5rem;
     }
-    
+
     #nav-photos img,
     #nav-videos img {
         width: 5rem;
@@ -224,21 +253,27 @@
         font-size: .6rem;
         padding: .1rem .2rem;
     }
-    #nav-albums .photos-card{
+
+    #nav-albums .photos-card {
         width: 8rem;
     }
-    #nav-albums .photos-card img{
+
+    #nav-albums .photos-card img {
         height: 9rem;
     }
-    #nav-albums .photos-card h5{
-        font-size:1rem !important;
+
+    #nav-albums .photos-card h5 {
+        font-size: 1rem !important;
     }
+
     .event_img {
         height: 100px;
     }
-    .event_sec{
+
+    .event_sec {
         width: 95%;
     }
+
     .add_friend {
         width: 35%;
     }
@@ -256,8 +291,10 @@
     .container {
         padding: 0rem !important;
     }
-    .about_sec, .event_sec{
-        padding: 0.5rem!important;
+
+    .about_sec,
+    .event_sec {
+        padding: 0.5rem !important;
     }
 
     #nav-photos img,
@@ -265,6 +302,7 @@
         width: 4rem;
         height: 4rem;
     }
+
     /*.gr_topic {
         width: 100%;
         margin-bottom: 1rem;
@@ -276,9 +314,10 @@
     .create {
         width: 40%;
     }*/
-    .topics{
+    .topics {
         width: 90%;
     }
+
     .add_friend {
         width: 41%;
     }
@@ -286,7 +325,9 @@
 }
 
 @media (max-width:420px) {
-    .about_sec, .event_sec {
+
+    .about_sec,
+    .event_sec {
         width: 95%;
         padding: 0.5rem !important;
     }
@@ -294,37 +335,49 @@
     .topics {
         width: 90%;
     }
+
     .search {
         width: 50%;
     }
+
     .create {
         width: 50%;
     }
-    .tag{
+
+    .tag {
         width: 85%;
     }
-    .time{
+
+    .time {
         font-size: 0.8rem;
     }
-    .event_id{
+
+    .event_id {
         font-size: 1rem;
     }
-    .img_holder{
+
+    .img_holder {
         width: 35%;
     }
-    .info_holder{
+
+    .info_holder {
         width: 55%;
     }
+
     .add_friend {
         width: 25%;
     }
-    .add_info{
+
+    .add_info {
         display: none;
     }
-    .add_row{
+
+    .add_row {
         display: block;
     }
-    .add_detail{
+
+    .add_detail {
         width: 39%;
     }
 }
+
