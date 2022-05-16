@@ -3,7 +3,11 @@
     right: 1rem;
     bottom: 1rem;
 }
-
+.nav-link.active{
+    background-color: deepskyblue;
+    color: white;
+    border-color: #fff;
+}
 .overflow-hidden img {
     object-fit: cover;
 }
@@ -39,7 +43,9 @@
 .accordion-button:active {
     color: black;
 }
-
+.man{
+    font-size: 8rem;
+}
 .about_sec,
 .event_sec {
     width: 50%;
@@ -360,6 +366,7 @@
         padding-left: 0.25rem;
     padding-right: 0.25rem;
     }
+    
 }
 
 @media (max-width:420px) {
@@ -420,5 +427,24 @@
     .detail{
         font-size: 0.9rem;
     }
+    .breakdown2{
+        margin: auto;
+
+    }
+    .breakdown1{
+        margin: auto;
+    margin-bottom: 0.5rem;
+    }
+    .p-target{
+        padding: 0.1rem 0.4rem!important;
+    }
+    .man{
+        font-size: 5rem;
+    }
+    .groups_icon{
+        margin-top: 1.5rem!important;
+    margin-bottom: 1.5rem!important;
+    }
 }
+
 
