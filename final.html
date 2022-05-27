@@ -15,16 +15,16 @@
 </head>
 <body>
     <div class="upper bg-dark">
-        <div class="container pt-4">
-            <div class="row justify-content-between align-items-center flex-wrap">
-                <div class="col-7">
+        <div class="container pt-4 upper_container">
+            <div class="row justify-content-between align-items-center flex-wrap upper-row">
+                <div class="col-8 course_name">
                     <a href="" style="text-decoration: none;
                     color: mediumpurple;" class="fw-bold">Development</a><span style="color: white;">  >  </span><a href="" style="text-decoration: none;
                     color: mediumpurple;" class="fw-bold">Programming</a><span style="color: white;">  >  </span><a href="" style="text-decoration: none;
                     color: mediumpurple;" class="fw-bold">Python</a>
-                    <h2 style="color: white;font-size: 2.3rem;" class="my-3 fw-bold">Learn Python: The Complete Python Programming Course</h2>
+                    <h2 style="color: white;" class="my-3 fw-bold upper-head">Learn Python: The Complete Python Programming Course</h2>
                     <h3 style="color: white;
-                    font-size: 1.3rem;" class="mb-3">Learn A-Z everything about Python, from the basics, to advanced topics like Python GUI, Python Data Analysis, and more!</h3>
+                    " class="mb-3 upper-subhead">Learn A-Z everything about Python, from the basics, to advanced topics like Python GUI, Python Data Analysis, and more!</h3>
                     <a href="" style="text-decoration: none;
                     color: gold;">4.3 
                         <i class='bx bxs-star'></i>
@@ -52,14 +52,12 @@
                     </div>
                         
                 </div>
-                <div class="col-4 position-relative" >
+                <div class="col-4 position-relative video-holder" >
                     <video class="video_pic" style="height: auto;
-            object-fit: cover; width: 100%; border: 1px solid white;">
+            object-fit: cover;  border: 1px solid white;">
               <source src="./v2.mp4" type="video/mp4">
             </video>
-            <div class="position-absolute px-2 py-1 text-light" data-bs-toggle="modal" data-bs-target="#itemid1" style="left: 30%;
-            top: 15%;
-            font-size: 5rem;
+            <div class="position-absolute px-2 py-1 text-light course_preview" data-bs-toggle="modal" data-bs-target="#itemid1" style="
             cursor: pointer;
             text-align: center;">
               <i class='bx bx-play-circle'></i>
@@ -71,7 +69,7 @@
                                                 <div class="modal-header py-2">
                                                     <h5 class="modal-title" id="exampleModalLabel">Course Preview</h5>
                                                     <button type="button" class="btn-close text-light bg-white"
-                                                        data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        data-bs-dismiss="modal" aria-label="Close" style="font-size: 0.8rem!important;"></button>
     
                                                 </div>
                                                 <div class="modal-body">
@@ -85,34 +83,34 @@
                                                     <div>
                                                         <h5 class="mb-4">Free sample videos</h5>
                                                             <div class="videos-list d-flex mb-4">
-                                                                <diV class="me-3">
+                                                                <diV class="me-3" style="font-size: 0rem!important;">
                                                                     <img src="./img/a.jpg" alt="...."></diV>
                                                                 <p class="me-5">Learn Python: The Complete Python Programming Course </p>
                                                                 <p>5.04</p>
                                                             </div>
                                                             <div class="videos-list d-flex  mb-4">
-                                                                <diV class="me-3">
+                                                                <diV class="me-3" style="font-size: 0rem!important;">
                                                                     <img src="./img/d.jpg" alt="...."></diV>
                                                                 <p  class="me-5">Learn Python: The Complete Python Programming Course
                                                                 </p>
                                                                 <p>5.04</p>
                                                             </div>
                                                             <div class="videos-list d-flex  mb-4">
-                                                                <diV class="me-3">
+                                                                <diV class="me-3" style="font-size: 0rem!important;">
                                                                     <img src="./img/c.jpg" alt="...."></diV>
                                                                 <p  class="me-5"> Learn Python: The Complete Python Programming Course
                                                                 </p>
                                                                 <p>5.04</p>
                                                             </div>
                                                             <div class="videos-list d-flex  mb-4">
-                                                                <diV class="me-3">
+                                                                <diV class="me-3" style="font-size: 0rem!important;">
                                                                     <img src="./img/e.jpg" alt="...."></diV>
                                                                 <p  class="me-5">Learn Python: The Complete Python Programming Course
                                                                 </p>
                                                                 <p>5.04</p>
                                                             </div>
                                                             <div class="videos-list d-flex  mb-4">
-                                                                <diV class="me-4">
+                                                                <diV class="me-4" style="font-size: 0rem!important;">
                                                                     <img src="./img/f.jpg" alt="...."></diV>
                                                                 <p  class="me-5">Learn Python: The Complete Python Programming Course
                                                                 </p>
@@ -133,17 +131,17 @@
         </div>
     </div>
     <div class="lower">
-        <div class="container">
-            <div class="row justify-content-between align-items-center flex-wrap">
-                <div class="col-7 mt-5 " >
+        <div class="container lower_container">
+            <div class="row justify-content-between align-items-center flex-wrap price_card_row" style="position: relative;">
+                <div class="col-8 mt-5 detail_card" >
                     <div class="learn p-3" style="border: 1px solid grey;">
                         <h3 class="mb-4 fw-bold" style="font-size: 1.6rem;">What you will learn</h3>
                         <div class="row justify-content-between align-items-center flex-wrap mb-1">
-                            <div class="col-6 d-flex">
+                            <div class="col-6 d-flex creation">
                                 <i class='bx bx-check'></i>
                                 <h6 style="font-size: 0.95rem;">Create their own Python Programs</h6>
                             </div>
-                            <div class="col-6 d-flex">
+                            <div class="col-6 d-flex creation">
                                 <i class='bx bx-check'></i>
                                 <h6 style="font-size: 0.95rem;">Create their own Python Programs</h6>
                             </div>
@@ -178,10 +176,10 @@
                                             <li class="list-group-item border-0" data-bs-toggle="modal" data-bs-target="#itemid1">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <button class=" p-0 m-0 border-0 bg-light align-items-center d-flex"> <i
-                                                            class='bx bx-play-circle me-2'></i> <a href="#" class="stretched-link" style="font-size: 0.94rem;
+                                                            class='bx bx-play-circle me-2'></i> <a href="#" class="stretched-link " style="
                                                             color: mediumpurple;"> The
                                                             Chapter 1</a> </button>
-                                                    <div class="d-flex " style="font-size: 0.94rem;">
+                                                    <div class="d-flex prev-div" style="font-size: 0.94rem;">
                                                         <a href="#" class="stretched-link me-4" style="color: mediumpurple;">Preview</a>
                                                         <p class="p-0 m-0">26min</p>
                                                     </div>
@@ -254,10 +252,10 @@
                                             <li class="list-group-item border-0" data-bs-toggle="modal" data-bs-target="#itemid2">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <button class=" p-0 m-0 border-0 bg-light align-items-center d-flex"> <i
-                                                            class='bx bx-play-circle me-2'></i> <a href="#" class="stretched-link" style="font-size: 0.94rem;
+                                                            class='bx bx-play-circle me-2'></i> <a href="#" class="stretched-link " style="
                                                             color: mediumpurple;"> The
                                                             Chapter 2</a> </button>
-                                                    <div class="d-flex " style="font-size: 0.94rem;">
+                                                    <div class="d-flex prev-div" style="font-size: 0.94rem;">
                                                         <a href="#" class="stretched-link me-4" style="color: mediumpurple;">Preview</a>
                                                         <p class="p-0 m-0">26min</p>
                                                     </div>
@@ -350,10 +348,11 @@
                                             <li class="list-group-item border-0" data-bs-toggle="modal" data-bs-target="#itemid3">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <button class=" p-0 m-0 border-0 bg-light align-items-center d-flex"> <i
-                                                            class='bx bx-play-circle me-2'></i> <a href="#" class="stretched-link"> The
+                                                            class='bx bx-play-circle me-2'></i> <a href="#" class="stretched-link " style="
+                                                            color: mediumpurple;"> The
                                                             Chapter 1</a> </button>
-                                                    <div class="d-flex ">
-                                                        <a href="#" class="stretched-link me-4">Preview</a>
+                                                    <div class="d-flex prev-div" style="font-size: 0.94rem;">
+                                                        <a href="#" class="stretched-link me-4" style="color: mediumpurple;">Preview</a>
                                                         <p class="p-0 m-0">26min</p>
                                                     </div>
                                                 </div>
@@ -425,10 +424,11 @@
                                             <li class="list-group-item border-0" data-bs-toggle="modal" data-bs-target="#itemid4">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <button class=" p-0 m-0 border-0 bg-light align-items-center d-flex"> <i
-                                                            class='bx bx-play-circle me-2'></i> <a href="#" class="stretched-link"> The
+                                                            class='bx bx-play-circle me-2'></i> <a href="#" class="stretched-link " style="
+                                                            color: mediumpurple;"> The
                                                             Chapter 2</a> </button>
-                                                    <div class="d-flex ">
-                                                        <a href="#" class="stretched-link me-4">Preview</a>
+                                                    <div class="d-flex prev-div" style="font-size: 0.94rem;">
+                                                        <a href="#" class="stretched-link me-4" style="color: mediumpurple;">Preview</a>
                                                         <p class="p-0 m-0">26min</p>
                                                     </div>
                                                 </div>
@@ -526,14 +526,14 @@
                     <ul>
                         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab magnam, amet quasi officia beatae quas praesentium soluta velit sequi odit, laudantium dignissimos id. Sequi ratione id excepturi ea, eligendi facere.</li>
                     </ul>
-                    <div class="sales">
+                    <div class="sales my-4">
                         <h3 class="mb-4 fw-bold" style="font-size: 1.6rem;">Students also bought</h3>
-                        <div class="row pb-3 mb-3 justify-content-between align-items-center" style="cursor: pointer;border-bottom: 1px solid darkgrey;">
-                            <div class="col-2">
+                        <div class="row pb-3 mb-3 justify-content-between align-items-center flex-wrap" style="cursor: pointer;border-bottom: 1px solid darkgrey;">
+                            <div class="col-2 img_holder">
                                 <img src="./img/f.jpg" style="width: 100%;
                                 height: auto;">
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 img_name">
                                 <h5 class="fw-bold" style="font-size: 1rem;">Python for beginners</h5>
                                 <small><span style="color: green;" class="fw-bold">2.5 total hours • </span>Updated 05/2022</small>
                             </div>
@@ -556,11 +556,11 @@
                             </div>
                         </div>
                         <div class="row pb-3 mb-3 justify-content-between align-items-center" style="cursor: pointer;border-bottom: 1px solid darkgrey;">
-                            <div class="col-2">
+                            <div class="col-2 img_holder">
                                 <img src="./img/f.jpg" style="width: 100%;
                                 height: auto;">
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 img_name">
                                 <h5 class="fw-bold" style="font-size: 1rem;">Python for beginners</h5>
                                 <small><span style="color: green;" class="fw-bold">2.5 total hours • </span>Updated 05/2022</small>
                             </div>
@@ -585,11 +585,11 @@
                     </div>
                     <div class="together p-4 mb-4" style="border: 1px solid grey;">
                         <h3 class="mb-4 fw-bold" style="font-size: 1.6rem;">Frequently bought together</h3>
-                        <div class="row justify-content-between align-items-center mb-4">
-                            <div class="col-4">
+                        <div class="row justify-content-between align-items-center mb-4 flex-wrap">
+                            <div class="col-4 together-img">
                                 <img src="./img/f.jpg" style="width: 100%; height:auto">
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 together-course">
                                 <h5 class="fw-bold">Python for beginners.</h5>
                                 <small>John Doe, The Codex</small><br>
                                 <span style="color: goldenrod;">
@@ -602,17 +602,17 @@
                                     <small style="color: darkslategrey;">2217</small>
                                 </span>
                             </div>
-                            <div class="col-1 fw-bold">
+                            <div class="col-1 fw-bold together-price">
                                 $75
                                 <span class="fw-lighter" style="color: grey;
                                 text-decoration: line-through;">$85</span>
                             </div>
                         </div>
                         <div class="row justify-content-between align-items-center mb-4">
-                            <div class="col-4">
+                            <div class="col-4 together-img">
                                 <img src="./img/f.jpg" style="width: 100%; height:auto">
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 together-course">
                                 <h5 class="fw-bold">Python for beginners.</h5>
                                 <small>John Doe, The Codex</small><br>
                                 <span style="color: goldenrod;">
@@ -625,33 +625,400 @@
                                     <small style="color: darkslategrey;">2217</small>
                                 </span>
                             </div>
-                            <div class="col-1 fw-bold">
+                            <div class="col-1 fw-bold together-price">
                                 $75
                                 <span class="fw-lighter" style="color: grey;
                                 text-decoration: line-through;">$85</span>
                             </div>
                         </div>
-                        <div class="row justify-content-between align-items-center">
-                            <div class="col-6" style="font-size: 1.4rem;">
+                        <div class="row justify-content-between align-items-center flex-wrap">
+                            <div class="col-6 together-total" >
                                 Total: <span class="fw-bold">$80</span> <small style="color: darkslategrey;
                                 font-size: 1.1rem;
                                 text-decoration: line-through;">$100</small>
                             </div>
-                            <div class="col-3 " style="text-align: end;">
-                                <button type="button" class="btn btn-warning fw-bold d-flex align-items-center" style="color: white;">Add all to cart
+                            <div class="col-4 add-cart" style="text-align: end;">
+                                <button type="button" class="btn btn-warning fw-bold d-flex align-items-center" style="color: white; float: right;">Add all to cart
                                     <i class='bx bx-cart-add' style="font-size: 1.4rem;"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
+                    <div class="instructor">
+                        <h3 class="mb-4 fw-bold" style="font-size: 1.6rem;">Instructors</h3>
+                        <a href=""  style="color: blueviolet;"><h5 class="fw-bold">John Doe</h5></a>
+                        <p>CEO of TheCodex.me - Teaching 500,000+ Students how to code</p>
+                        <div class="row justify-content-start align-items-center mb-3">
+                            <div class="col-3">
+                                <img src="./img/u2.png" style="width:100%; height:auto;">
+                            </div>
+                            
+                            <div class="col-4 d-flex flex-column instructor-detail">
+                                <div class="row justify-content-evenly align-items-center">
+                                    <div class="col-2" style="font-size: 1.1rem;"><i class='bx bxs-star'></i></div>
+                                    <div class="col-9"><p>4.3 Instructor Rating</p></div>  
+                                </div>
+                                <div class="row justify-content-evenly align-items-center">
+                                    <div class="col-2" style="font-size: 1.1rem;"><i class='bx bxs-medal'></i></div>
+                                    <div class="col-9"><p>71,202 Reviews</p></div> 
+                                </div>
+                                <div class="row justify-content-evenly align-items-center">
+                                    <div class="col-2" style="font-size: 1.1rem;"><i class='bx bxs-group' ></i></div>
+                                    <div class="col-9"><p>16 Courses</p></div> 
+                                </div>
+                                <div class="row justify-content-evenly align-items-center">
+                                    <div class="col-2" style="font-size: 1.1rem;"><i class='bx bx-play-circle' ></i></div>
+                                    <div class="col-9"><p>16 Courses</p></div> 
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex consectetur illo accusantium voluptatem accusamus repudiandae tenetur? Impedit a reprehenderit ducimus totam molestias reiciendis maiores veniam ratione suscipit. Accusamus illum nostrum hic vel quam architecto eveniet qui, quaerat odit aliquam suscipit maiores. Minus officia provident autem! Ut suscipit omnis rerum quod quidem enim culpa earum vero a fuga! Quibusdam saepe temporibus cum reiciendis quos esse facilis, odio minus obcaecati recusandae fugit alias aperiam soluta, repudiandae a repellendus aut optio excepturi quam asperiores est. Error consequuntur delectus eos, reiciendis perferendis pariatur quisquam, excepturi eligendi ullam ducimus ipsam nam rem qui aspernatur expedita!</p>
+                    </div>
+                    <div class="feedback mb-4">
+                        <h3 class="mb-4 fw-bold" style="font-size: 1.6rem;">Student feedback</h3>
+                        <div class="row justify-content-evenly align-items-center flex-wrap">
+                            <div class="col-2 star-detail" style="text-align: center;
+                            color: darkgoldenrod;">
+                                <h1 class="fw-bold" style="font-size: 4rem;">4.3</h2>
+                                <i class='bx bxs-star' style="font-size: 0.8rem;"></i>
+                                <i class='bx bxs-star' style="font-size: 0.8rem;"></i>
+                                <i class='bx bxs-star' style="font-size: 0.8rem;"></i>
+                                <i class='bx bxs-star' style="font-size: 0.8rem;"></i>
+                                <i class='bx bxs-star-half' style="font-size: 0.8rem;"></i>
+                                <h6 style="font-size: 0.84rem;">Course rating</h6>
+                            </div>
+                            <div class="col-5 d-flex flex-column justify-content-between ">
+                                <a href="" style="text-decoration: none; border-radius:5px;background:gray " class="mb-3">
+                                    <div class="progress" style="height: 7px; width:100%"></div>
+                                </a>
+                                <a href="" style="text-decoration: none;border-radius:5px; background:gray" class="mb-3">
+                                    <div class="progress" style="height: 7px; width:100%"></div>
+                                </a>
+                                <a href="" style="text-decoration: none;border-radius:5px; background:gray" class="mb-3">
+                                    <div class="progress" style="height: 7px; width:100%"></div>
+                                </a>
+                                <a href="" style="text-decoration: none;border-radius:5px; background:gray" class="mb-3">
+                                    <div class="progress" style="height: 7px; width:100%"></div>
+                                </a>
+                                <a href="" style="text-decoration: none; border-radius:5px; background:gray" class="mb-3">
+                                    <div class="progress" style="height: 7px; width:100%"></div>
+                                </a>
+                            </div>
+                            <div class="col-2 star-count d-flex flex-column">
+                                <a href=""class="mb-1" style="text-decoration: none; color: goldenrod;font-size: 0.8rem;">
+                                    <i class='bx bxs-star' ></i>
+                                    <i class='bx bxs-star' ></i>
+                                    <i class='bx bxs-star' ></i>
+                                    <i class='bx bxs-star' ></i>
+                                    <i class='bx bxs-star' ></i>
+                                </a>
+                                <a href="" class="mb-1" style="text-decoration: none; color: goldenrod;font-size: 0.8rem;">
+                                    <i class='bx bxs-star' ></i>
+                                    <i class='bx bxs-star' ></i>
+                                    <i class='bx bxs-star' ></i>
+                                    <i class='bx bxs-star' ></i>
+                                    <i class='bx bx-star' ></i>
+                                </a>
+                                <a href="" class="mb-1" style="text-decoration: none; color: goldenrod;font-size: 0.8rem;">
+                                    <i class='bx bxs-star' ></i>
+                                    <i class='bx bxs-star' ></i>
+                                    <i class='bx bxs-star' ></i>
+                                    <i class='bx bx-star' ></i>
+                                    <i class='bx bx-star' ></i>
+                                </a>
+                                <a href="" class="mb-1" style="text-decoration: none; color: goldenrod;font-size: 0.8rem;">
+                                    <i class='bx bxs-star' ></i>
+                                    <i class='bx bxs-star' ></i>
+                                    <i class='bx bx-star' ></i>
+                                    <i class='bx bx-star' ></i>
+                                    <i class='bx bx-star' ></i>
+                                </a>
+                                <a href="" style="text-decoration: none; color: goldenrod;font-size: 0.8rem;">
+                                    <i class='bx bxs-star' ></i>
+                                    <i class='bx bx-star' ></i>
+                                    <i class='bx bx-star' ></i>
+                                    <i class='bx bx-star' ></i>
+                                    <i class='bx bx-star' ></i>
+                                </a>
+                            </div>
+                            <div class="col-1 d-flex flex-column">
+                                <a href="" style="color: blueviolet;">43%</a>
+                                <a href="" style="color: blueviolet;">37%</a>
+                                <a href="" style="color: blueviolet;">15%</a>
+                                <a href="" style="color: blueviolet;">3%</a>
+                                <a href="" style="color: blueviolet;">2%</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review mb-4">
+                        <h3 class="mb-4 fw-bold" style="font-size: 1.6rem;">Reviews</h3>
+                        <div class="row justify-content-between align-items-center flex-wrap">
+                            <div class="col-7 search-box">
+                                <div class="form-group has-search">
+                                    <span class="fa fa-search form-control-feedback"><i class="bx bx-search"></i></span>
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                                
+                            </div>
+                            <div class="col-4">
+                                <label class="dropdown">
+
+                                    <div class="dd-button">
+                                      All ratings
+                                    </div>
+                                  
+                                    <input type="checkbox" class="dd-input" id="test">
+                                  
+                                    <ul class="dd-menu">
+                                      <li>All stars</li>
+                                      <li>5 stars</li>
+                                      <li>4 stars</li>
+                                      <li>3 stars</li>
+                                      <li>2 stars</li>
+                                      <li>1 stars</li>
+                                      
+                                      
+                                    </ul>
+                                    
+                                  </label>
+                                
+                            </div>
+                        </div>
+                        <div class="row mt-5 pb-4 flex-wrap" style="border-bottom: 1px solid grey;">
+                            <div class="col-2 comm-img">
+                                <img src="./img/u2.png" style="width: 50%; height:auto">
+                            </div>
+                            <div class="col-9 comm-detail">
+                                <h5 class="fw-bold">John Doe</h5>
+                                <i class='bx bxs-star' style="color: goldenrod;"></i>
+                                    <i class='bx bxs-star' style="color: goldenrod;"></i>
+                                    <i class='bx bxs-star' style="color: goldenrod;"></i>
+                                    <i class='bx bx-star' style="color: goldenrod;"></i>
+                                    <i class='bx bx-star' style="color: goldenrod;"></i>
+                                <small>3 weeks ago</small>
+                                <p class="mt-2" style="font-size: 0.93rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ab itaque odit autem ratione labore accusantium quidem commodi repellat. Accusantium?</p>
+                                <div class="row align-items-center">
+                                    <div class="col-2">
+                                        <button type="button" class="btn btn-success" style="border-radius: 50%;
+                                        font-size: 1.2rem;"><i class='bx bx-like' ></i></button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button type="button" class="btn btn-warning" style="border-radius: 50%;
+                                        font-size: 1.2rem; color: white;"><i class='bx bx-dislike' ></i></button>
+                                    </div>
+                                    <div class="col-2">
+                                        <a href="">Report</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5 pb-4 flex-wrap" style="border-bottom: 1px solid grey;">
+                            <div class="col-2 comm-img">
+                                <img src="./img/u2.png" style="width: 50%; height:auto">
+                            </div>
+                            <div class="col-9 comm-detail">
+                                <h5 class="fw-bold">John Doe</h5>
+                                <i class='bx bxs-star' style="color: goldenrod;"></i>
+                                    <i class='bx bxs-star' style="color: goldenrod;"></i>
+                                    <i class='bx bxs-star' style="color: goldenrod;"></i>
+                                    <i class='bx bx-star' style="color: goldenrod;"></i>
+                                    <i class='bx bx-star' style="color: goldenrod;"></i>
+                                <small>3 weeks ago</small>
+                                <p class="mt-2" style="font-size: 0.93rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ab itaque odit autem ratione labore accusantium quidem commodi repellat. Accusantium?</p>
+                                <div class="row align-items-center">
+                                    <div class="col-2">
+                                        <button type="button" class="btn btn-success" style="border-radius: 50%;
+                                        font-size: 1.2rem;"><i class='bx bx-like' ></i></button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button type="button" class="btn btn-warning" style="border-radius: 50%;
+                                        font-size: 1.2rem; color: white;"><i class='bx bx-dislike' ></i></button>
+                                    </div>
+                                    <div class="col-2">
+                                        <a href="">Report</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="courses">
+                        <h3 class="mb-4 fw-bold" style="font-size: 1.6rem;">More courses by <a href="" style="text-decoration: none; color:blueviolet">John Doe</a></h3>
+                        <div class="row justify-content-between align-items-center flex-wrap">
+                            <div class="col-4 course-exm">
+                                <img src="./img/a.jpg" style="width: 100%; height:auto">
+                                <h6 class="fw-bold mt-3">The complete Python for beginners</h6>
+                                <small>John Doe, The Codex</small><br>
+                                <a href="" style="color: goldenrod;
+                                text-decoration: none;">4.3
+                                    <i class='bx bxs-star' ></i>
+                                    <i class='bx bx-star' ></i>
+                                    <i class='bx bx-star' ></i>
+                                    <i class='bx bx-star' ></i>
+                                    <i class='bx bx-star' ></i>
+                                    <small style="color: grey;">(615)</small><br>
+                                    
+                                </a>
+                                <small>15 hours • 146 lectures • All levels</small>
+                                    <h6 class="mt-2 fw-bold">$85<small class="fw-lighter" style="text-decoration: line-through;
+                                        color: grey;">$100</small></h6> 
+                            </div>
+                            <div class="col-4 course-exm">
+                                <img src="./img/a.jpg" style="width: 100%; height:auto">
+                                <h6 class="fw-bold mt-3">The complete Python for beginners</h6>
+                                <small>John Doe, The Codex</small><br>
+                                <a href="" style="color: goldenrod;
+                                text-decoration: none;">4.3
+                                    <i class='bx bxs-star' ></i>
+                                    <i class='bx bx-star' ></i>
+                                    <i class='bx bx-star' ></i>
+                                    <i class='bx bx-star' ></i>
+                                    <i class='bx bx-star' ></i>
+                                    <small style="color: grey;">(615)</small><br>
+                                    
+                                </a>
+                                <small>15 hours • 146 lectures • All levels</small>
+                                    <h6 class="mt-2 fw-bold">$85<small class="fw-lighter" style="text-decoration: line-through;
+                                        color: grey;">$100</small></h6> 
+                            </div>
+                            <div class="col-4 course-exm">
+                                <img src="./img/a.jpg" style="width: 100%; height:auto">
+                                <h6 class="fw-bold mt-3">The complete Python for beginners</h6>
+                                <small>John Doe, The Codex</small><br>
+                                <a href="" style="color: goldenrod;
+                                text-decoration: none;">4.3
+                                    <i class='bx bxs-star' ></i>
+                                    <i class='bx bx-star' ></i>
+                                    <i class='bx bx-star' ></i>
+                                    <i class='bx bx-star' ></i>
+                                    <i class='bx bx-star' ></i>
+                                    <small style="color: grey;">(615)</small><br>
+                                    
+                                </a>
+                                <small>15 hours • 146 lectures • All levels</small>
+                                    <h6 class="mt-2 fw-bold">$85<small class="fw-lighter" style="text-decoration: line-through;
+                                        color: grey;">$100</small></h6> 
+                            </div>
+                            
+                        </div>
+                    </div>
                 </div>
                 
             
-                <div class="col-4">hello</div>
+                <div class="col-3 py-5 px-4 price_card" >
+                    <h3 class="fw-bold">$78 <span class="fw-lighter" style="font-size: 1.4rem;
+                        text-decoration: line-through;
+                        color: grey;">$100</span> <span class="fw-lighter" style="font-size: 1.4rem;">89%off</span></h3>
+                    <div class="row justify-content-start ">
+                        <div class="col-1" style="color: red;
+                        font-size: 1.2rem;">
+                            <i class='bx bx-time-five'></i>
+                        </div>
+                        <div class="col-10" style="color: red;">
+                            <p><span class="fw-bold">10 hours</span> left at this price.</p>
+                        </div>
+                        
+                    </div>
+                    <button type="button" class="btn btn-warning py-2 px-3 mb-3 right-cart" style="color: white; width: 100%;
+                    margin: auto;border-color: mediumpurple; border-radius: 0;">Add to cart <i class='bx bx-cart-add' style="font-size: 1.3rem;" ></i></button>
+                    <button type="button" class="btn btn-default mb-3 buy-now" style="width: 100%;
+                    margin: auto; border:1px solid black;border-radius: 0;">Buy now <i class='bx bxs-right-arrow' style="font-size: 1.2rem;" ></i></button><br>
+                    <h6 class="fw-bold mt-4 mb-3">This course includes :</h6>
+                    <div class="row">
+                        <div class="col-1" style="font-size: 1.1rem;">
+                            <i class='bx bxs-videos'></i>
+                        </div>
+                        <div class="col-10" style="font-size: 0.9rem;">
+                            <p>14 hours on-demand video</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1" style="font-size: 1.1rem;">
+                            <i class='bx bxs-file-blank'></i>
+                        </div>
+                        <div class="col-10" style="font-size: 0.9rem;">
+                            <p>1 article</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1" style="font-size: 1.1rem;">
+                            <i class='bx bx-infinite' ></i>
+                        </div>
+                        <div class="col-10" style="font-size: 0.9rem;">
+                            <p>Full time access</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-evenly align-items-center" style="text-align: center;">
+                        <div class="col-2">
+                            <a href="" class="pb-1" style="color: black;
+                            text-decoration: none;
+                            border-bottom: 1px solid black;font-size: 1.4rem;">
+                            <i class='bx bxs-share-alt'></i>
+                            </a>
+                        </div>
+                        <div class="col-2">
+                            <a href="" class="pb-1" style="color: black;
+                            text-decoration: none;
+                            border-bottom: 1px solid black;font-size: 1.4rem;">
+                            <i class='bx bxs-gift' ></i>
+                            </a>
+                        </div>
+                        <div class="col-2">
+                            <a href="" class="pb-1" style="color: black;
+                            text-decoration: none;
+                            border-bottom: 1px solid black;font-size: 1.4rem;">
+                            <i class='bx bxs-discount' ></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <section class="footer bg-dark py-4 px-5 mt-4">
+        <div class="row justify-content-between footer-row">
+            <div class="col-9 d-flex flex-wrap footer_left justify-content-between" style="font-size: 0.9rem;">
+                <div class="col-3 d-flex flex-column" style="color: white;" >
+                    <p>okayg business</p>
+                    <p>okayg business</p>
+                    <p>okayg business</p>
+                    <p>okayg business</p>
+                    <p>okayg business</p>
+                </div>
+                <div class="col-3 d-flex flex-column" style="color: white;">
+                    <p>Tech</p>
+                    <p>Blogs</p>
+                    <p>Career</p>
+                    <p>Contact</p>
+                    <p>About us</p>
+                </div>
+                <div class="col-3 d-flex flex-column" style="color: white;">
+                    <p>Tech</p>
+                    <p>Blogs</p>
+                    <p>Career</p>
+                    <p>Contact</p>
+                    <p>About us</p>
+                </div>
+                
+            </div>
+            <div class="col-2 footer_right">
+                <a href="" style="color: white; text-decoration:none; border: 1px solid white;" class="py-2 px-4"><i class='bx bx-globe'></i> English</a>
+            </div>
+        </div>
+        <div class="row justify-content-between mt-5 mb-4" style="color: white;">
+            <div class="col-9">
+                <h2>OkayG</h2>
+            </div>
+            <div class="col-2 copy">
+                <p style="font-size: 0.9rem;">Copyright 2022</p>
+            </div>
+        </div>
+    </section>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+
 </script>
+
 </body>
+</html>
